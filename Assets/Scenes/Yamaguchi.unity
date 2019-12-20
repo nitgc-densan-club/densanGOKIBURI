@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 267585813}
   - component: {fileID: 267585812}
   m_Layer: 0
-  m_Name: spray
+  m_Name: onion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
