@@ -6,7 +6,7 @@ public class Add : MonoBehaviour
 {
     // Start is called before the first frame update
     
-      float speed = 1.3f;
+      float accel = 5.0f;
       Rigidbody rb ;
     float x;
     float z;
@@ -26,9 +26,33 @@ public class Add : MonoBehaviour
     }
     void Update()
     {
-        x = Input.GetAxisRaw("Horizontal") * speed;
-        z = Input.GetAxisRaw("Vertical") * speed;
-        rb.AddForce(new Vector3(0, 0, z), ForceMode.Impulse);
+
+        if (Input.GetKey(KeyCode.S) )
+        {
+            if (accel > -0.7f)
+            {
+                accel = accel - 0.03f;
+            }
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            if (accel < 12.8f)
+            {
+                accel = accel + 0.3f;
+            }
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0, 80 * Time.deltaTime, 0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0, -80 * Time.deltaTime, 0);
+        }
+        accel = accel * 0.98f;
+        transform.position += transform.forward * Time.deltaTime * accel;
+
+
     }
 }
 
