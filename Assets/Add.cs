@@ -6,8 +6,10 @@ public class Add : MonoBehaviour
 {
     // Start is called before the first frame update
     
-      float accel = 5.0f;
+      float accel = 1.0f;
       Rigidbody rb ;
+    Vector3 force = new Vector3(0.0f, 0.0f, 1.0f);
+
     float x;
     float z;
 
@@ -18,6 +20,8 @@ public class Add : MonoBehaviour
 
     void FixedUpdate()
     {
+        rb = GetComponent<Rigidbody>();
+
         /*
         x = Input.GetAxis("Horizontal") * speed;
         z = Input.GetAxis("Vertical") * speed;
@@ -29,17 +33,21 @@ public class Add : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S) )
         {
-            if (accel > -0.7f)
+            if (accel > -5.0f)
             {
-                accel = accel - 0.03f;
+                accel = accel - 0.3f;
             }
+            rb.AddForce(force);
+            transform.position += transform.forward * Time.deltaTime * accel;
         }
         if (Input.GetKey(KeyCode.W))
         {
-            if (accel < 12.8f)
+            if (accel < 20.0f)
             {
                 accel = accel + 0.3f;
             }
+            rb.AddForce(force);
+            transform.position += transform.forward * Time.deltaTime * accel;
         }
         if (Input.GetKey(KeyCode.D))
         {
@@ -49,8 +57,9 @@ public class Add : MonoBehaviour
         {
             transform.Rotate(0, -80 * Time.deltaTime, 0);
         }
+        
         accel = accel * 0.98f;
-        transform.position += transform.forward * Time.deltaTime * accel;
+        
 
 
     }
