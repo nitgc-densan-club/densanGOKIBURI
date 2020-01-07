@@ -42,22 +42,32 @@ public class Add : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W))
         {
-            if (accel < 20.0f)
+            if (accel < 60.0f)
             {
-                accel = accel + 0.3f;
+                accel = accel + 0.7f;
             }
             rb.AddForce(force);
             transform.position += transform.forward * Time.deltaTime * accel;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 80 * Time.deltaTime, 0);
+            transform.Rotate(0, 30 * Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, -80 * Time.deltaTime, 0);
+            transform.Rotate(0, -30 * Time.deltaTime, 0);
         }
-        
+
+        if (Input.GetKey(KeyCode.D) & accel > 30.0f)
+        {
+            transform.Rotate(0, 250 * Time.deltaTime, 0);
+        }
+        if (Input.GetKey(KeyCode.A) & accel > 30.0f)
+        {
+            transform.Rotate(0, -250 * Time.deltaTime, 0);
+        }
+
+
         accel = accel * 0.98f;
         
 
