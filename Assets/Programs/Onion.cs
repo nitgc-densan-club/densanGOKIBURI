@@ -8,12 +8,19 @@ public class Onion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rby = GetComponent<Rigidbody>();
-        rby.AddForce(3.0f, 3.0f, 0, ForceMode.Impulse);
+        
     }
     // Update is called once per frame
     void Update()
     {
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+      //  if (Collision.gameObject.tag == "Player")
+        {
+
+        }
+    }
+
 }
