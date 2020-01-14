@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 654144383}
   - component: {fileID: 654144388}
   m_Layer: 0
-  m_Name: Player
+  m_Name: testPlayer
   m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   Trap: {fileID: 7592346377931077505, guid: 510a61d99b5c6ee4d858a11773f86905, type: 3}
+  Spray: {fileID: 8569114084650481209, guid: f3b4abb6848100f49ab0c2d4fd8f7930, type: 3}
   speed: 1
 --- !u!65 &654144384
 BoxCollider:
