@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class testPlayerControl : MonoBehaviour
 {
     public Rigidbody rb;
     public GameObject Trap;
+    public GameObject Spray;
     public float speed = 1.0f;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,10 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             Instantiate(Trap, new Vector3(transform.position.x, 3, transform.position.z), Trap.transform.rotation);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Instantiate(Spray, new Vector3(transform.position.x, 2, transform.position.z), Trap.transform.rotation);
         }
     }
 
