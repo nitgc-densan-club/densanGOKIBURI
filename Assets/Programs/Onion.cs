@@ -9,7 +9,7 @@ public class Onion : MonoBehaviour
     void Start()
     {
         rby = GetComponent<Rigidbody>();
-        rby.AddForce()
+        rby.AddForce(3.0f, 3.0f, 0, ForceMode.Impulse);
     }
     // Update is called once per frame
     void Update()
