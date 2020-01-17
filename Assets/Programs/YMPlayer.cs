@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class YMPlayer : MonoBehaviour
 {
-
-    float X;
-    float Z;
-    float sp;
-    public Rigidbody rby;
+    public Rigidbody rb;
+    public float speed = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
-        rby = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        X = Input.GetAxisRaw("Horizontal") * sp;
-        Z = Input.GetAxisRaw("Vertical") * sp;
-        rby.AddForce(X, 0, Z, ForceMode.Impulse);
-        
+        float x = Input.GetAxisRaw("Horizontal") * speed;
+        float z = Input.GetAxisRaw("Vertical") * speed;
+        rb.AddForce(x, 0, z, ForceMode.Impulse);
+
+        //onoinの加速効果
+        if (Input.GetKey(KeyCode.Q))
+        {
+            rb.AddForce(transform.forward * 30.0f, ForceMode.Force);
+        }
+
     }
 }
+    
