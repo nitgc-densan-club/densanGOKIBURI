@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   Trap: {fileID: 7592346377931077505, guid: 510a61d99b5c6ee4d858a11773f86905, type: 3}
-  Spray: {fileID: 8569114084650481209, guid: f3b4abb6848100f49ab0c2d4fd8f7930, type: 3}
+  Spray: {fileID: 2525791136418363894, guid: 39548773abbf69d41927de66aa78c80c, type: 3}
   speed: 1
 --- !u!65 &654144384
 BoxCollider:
