@@ -5,7 +5,7 @@ using UnityEngine;
 public class YMPlayer : MonoBehaviour
 {
 
-  /*  float X;
+    float X;
     float Z;
     float sp;
     public Rigidbody rby;
@@ -23,5 +23,5 @@ public class YMPlayer : MonoBehaviour
         Z = Input.GetAxisRaw("Vertical") * sp;
         rby.AddForce(X, 0, Z, ForceMode.Impulse);
         
-    }*/
+    }
 }

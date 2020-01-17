@@ -17,7 +17,7 @@ public class Onion : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-      //  if (Collision.gameObject.tag == "Player")
+        if (Collision.gameObject.tag == "Player")
         {
 
         }
