@@ -279,8 +279,6 @@ GameObject:
   - component: {fileID: 471228697}
   - component: {fileID: 471228698}
   - component: {fileID: 471228700}
-  - component: {fileID: 471228699}
-  - component: {fileID: 471228695}
   - component: {fileID: 471228696}
   m_Layer: 0
   m_Name: Cube (1)
@@ -363,24 +361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &471228695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471228690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9456fe42503e8c949bc448ecf2b08a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxSpeed: 30
-  AccelPerSecond: 10
-  TurnPerSecond: 15
-  speed: 0
-  rb: {fileID: 0}
-  force: {x: 0, y: 0, z: 0}
 --- !u!114 &471228696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +374,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 30
+  MinSpeed: -20
   AccelPerSecond: 20
+  BrakePerSecond: -15
   TurnPerSecond: 15
 --- !u!114 &471228697
 MonoBehaviour:
@@ -424,24 +406,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &471228699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471228690}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9456fe42503e8c949bc448ecf2b08a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxSpeed: 0
-  AccelPerSecond: 0
-  TurnPerSecond: 0
-  speed: 0
-  rb: {fileID: 0}
-  force: {x: 0, y: 0, z: 0}
 --- !u!146 &471228700
 WheelCollider:
   m_ObjectHideFlags: 0
