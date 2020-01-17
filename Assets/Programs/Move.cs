@@ -8,6 +8,7 @@ public class Move : MonoBehaviour
     public float MaxSpeed;//最高速を決める変数(km/h)
     public float MinSpeed;//再低速を決める変数(km/h*s)
     public float AccelPerSecond;//加速力を決める変数(km/h*s)
+    public float BackPersecond;//バックの速さを決める変数(km/m*s)
     public float BrakePerSecond;//ブレーキを決める変数(km/h*s)
     public float TurnPerSecond;//旋回力を決める変数(deg/s)
     private float speed;
@@ -36,7 +37,7 @@ public class Move : MonoBehaviour
 
         else if(Input.GetKey(KeyCode.S))
         {
-            speed += BrakePerSecond * Time.deltaTime - 3;
+            speed += BackPersecond * Time.deltaTime - 3;
             if (speed < MinSpeed) speed = MinSpeed;
         } else
         {
@@ -46,20 +47,25 @@ public class Move : MonoBehaviour
                 if (speed < 0) speed = 0;
             }else
             {
-                speed -= BrakePerSecond * Time.deltaTime / 2;
+                speed -= BackPersecond * Time.deltaTime / 2;
                 if (speed > -35) speed = 0;
             }
         }
-
-
-
-        /*else
+        /*if (Input.GetKey(KeyCode.Space) || (speed > 0)) 
+            
         {
-            speed -= BrakePerSecond * Time.deltaTime / 2;
-            if (speed > -35) speed = 0;
+            speed = speed + BackPersecond;
         }*/
 
-        force = transform.forward * speed;    // 力を設定
+
+
+            /*else
+            {
+                speed -= BrakePerSecond * Time.deltaTime / 2;
+                if (speed > -35) speed = 0;
+            }*/
+
+            force = transform.forward * speed;    // 力を設定
         rb.AddForce(force, ForceMode.Force);            // 力を加える
 
              //rb.velocity = transform.forward * Speed;
