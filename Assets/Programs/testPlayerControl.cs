@@ -8,6 +8,15 @@ public class testPlayerControl : MonoBehaviour
     public GameObject Trap;
     public GameObject Spray;
     public float speed = 1.0f;
+    public class ParticleCollision : MonoBehaviour
+    {
+        public float speed = 1.0f;
+        void OnParticleCollision(GameObject  obj)
+        {
+            speed = speed / 2;
+            Debug.Log (speed);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +37,7 @@ public class testPlayerControl : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Instantiate(Spray, new Vector3(transform.position.x, 2, transform.position.z), Trap.transform.rotation);
+            Instantiate(Spray, new Vector3(transform.position.x, transform.position.y, transform.position.z), Trap.transform.rotation);
         }
     }
 
@@ -42,7 +51,9 @@ public class testPlayerControl : MonoBehaviour
             //スタートコルーチン
             StartCoroutine(EffectTimer(10.0f, "speed"));
         }
+        
     }
+    
     //コルーチンの本体
     IEnumerator EffectTimer(float time, string events)
     {
