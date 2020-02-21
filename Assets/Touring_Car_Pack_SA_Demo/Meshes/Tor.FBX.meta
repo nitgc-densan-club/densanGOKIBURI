@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 4f6f2141bd60e5f4599bfe28543f59bb
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Tor_Bumper01
+  - first:
+      1: 100004
+    second: Tor_Bumper02
+  - first:
+      1: 100006
+    second: Tor_Carbody
+  - first:
+      1: 100008
+    second: Tor_Collision
+  - first:
+      1: 100010
+    second: Tor_Driver
+  - first:
+      1: 100012
+    second: Tor_Helmet
+  - first:
+      1: 100014
+    second: Tor_SWheel
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Tor_Bumper01
+  - first:
+      4: 400004
+    second: Tor_Bumper02
+  - first:
+      4: 400006
+    second: Tor_Carbody
+  - first:
+      4: 400008
+    second: Tor_Collision
+  - first:
+      4: 400010
+    second: Tor_Driver
+  - first:
+      4: 400012
+    second: Tor_Helmet
+  - first:
+      4: 400014
+    second: Tor_SWheel
+  - first:
+      21: 2100000
+    second: T_Carbody
+  - first:
+      21: 2100002
+    second: T_Windows01
+  - first:
+      21: 2100004
+    second: T_Interior
+  - first:
+      21: 2100006
+    second: 'Material #26'
+  - first:
+      21: 2100008
+    second: C_Suit
+  - first:
+      21: 2100010
+    second: Hans
+  - first:
+      21: 2100012
+    second: Helmet
+  - first:
+      21: 2100014
+    second: Sweel
+  - first:
+      23: 2300000
+    second: Tor_Bumper01
+  - first:
+      23: 2300002
+    second: Tor_Bumper02
+  - first:
+      23: 2300004
+    second: Tor_Carbody
+  - first:
+      23: 2300006
+    second: Tor_Collision
+  - first:
+      23: 2300008
+    second: Tor_Driver
+  - first:
+      23: 2300010
+    second: Tor_Helmet
+  - first:
+      23: 2300012
+    second: Tor_SWheel
+  - first:
+      33: 3300000
+    second: Tor_Bumper01
+  - first:
+      33: 3300002
+    second: Tor_Bumper02
+  - first:
+      33: 3300004
+    second: Tor_Carbody
+  - first:
+      33: 3300006
+    second: Tor_Collision
+  - first:
+      33: 3300008
+    second: Tor_Driver
+  - first:
+      33: 3300010
+    second: Tor_Helmet
+  - first:
+      33: 3300012
+    second: Tor_SWheel
+  - first:
+      43: 4300000
+    second: Tor_Bumper02
+  - first:
+      43: 4300002
+    second: Tor_Bumper01
+  - first:
+      43: 4300004
+    second: Tor_Carbody
+  - first:
+      43: 4300006
+    second: Tor_Driver
+  - first:
+      43: 4300008
+    second: Tor_Helmet
+  - first:
+      43: 4300010
+    second: Tor_Collision
+  - first:
+      43: 4300012
+    second: Tor_SWheel
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C_Suit
+    second: {fileID: 2100000, guid: 8a2d738b6489a7649954391c2fe55f25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hans
+    second: {fileID: 2100000, guid: ef6553ef265a6b144a6a45404aea301f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet
+    second: {fileID: 2100000, guid: f4c6f026fd442d2408cd7756166711fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: cfad46ecd44e68842a5659582a883500, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sweel
+    second: {fileID: 2100000, guid: a2e0a47bc6e139d4690a4c781385fdb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Carbody
+    second: {fileID: 2100000, guid: 60cf25d839dea6f4bb2da5b90d3d2ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Interior
+    second: {fileID: 2100000, guid: 2ab1c2e5958b5214fa9649e94ec94162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Windows01
+    second: {fileID: 2100000, guid: 283b912c6b0cbfc4095af409a2ac6a62, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Helmet
+    second: {fileID: 2800000, guid: 5c1484c3a514aae4eadac53292e7c093, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SWheel
+    second: {fileID: 2800000, guid: 8c8cf1f7c14d9e543bb55e3d0212442d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Carbody01
+    second: {fileID: 2800000, guid: 3622968d45ecba94da2fa87f07d49023, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Interior
+    second: {fileID: 2800000, guid: e51784e16481e1c4bae32ff99b7099f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: T_Windows01
+    second: {fileID: 2800000, guid: 8e7de5127e83e654caf240b35c177867, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hans_diffuse
+    second: {fileID: 2800000, guid: be01cf83bffcc864cb485997d97074d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: suit_diffuse
+    second: {fileID: 2800000, guid: 3abbb9c09aaa51a439de10571583e529, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

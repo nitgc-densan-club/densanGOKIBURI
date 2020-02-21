@@ -6,7 +6,7 @@ public class Move : MonoBehaviour
 {
 
     public float MaxSpeed;//最高速を決める変数(km/h)
-    public float MinSpeed;//再低速を決める変数(km/h*s)
+    public float MinSpeed;//再低速を決める変数(km/h*s)jya
     public float AccelPerSecond;//加速力を決める変数(km/h*s)
     public float BackPersecond;//バックの速さを決める変数(km/m*s)
     public float BrakePerSecond;//ブレーキを決める変数(km/h*s)

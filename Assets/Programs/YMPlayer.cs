@@ -17,14 +17,27 @@ public class YMPlayer : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal") * speed;
         float z = Input.GetAxisRaw("Vertical") * speed;
+        int number = 1;
         rb.AddForce(x, 0, z, ForceMode.Impulse);
-
-        //onoinの加速効果
-        if (Input.GetKey(KeyCode.Q))
+        
+        switch (number)
         {
-            rb.AddForce(transform.forward * 30.0f, ForceMode.Force);
-        }
 
+            case 1: break;
+
+            case 2: //onoinの加速効果
+                    if (Input.GetKey(KeyCode.Q))
+                    {
+                        rb.AddForce(transform.forward * 30.0f, ForceMode.Force);
+                    }
+                   
+                    break;
+
+
+
+
+
+            }
     }
 }
     
