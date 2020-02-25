@@ -18,12 +18,14 @@ public class Jump : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+            
+
         {
             //上にジャンプする。
             PlayerRigid.AddForce(transform.up * Upspeed);
 
 
-
+            
         }
 
     }
