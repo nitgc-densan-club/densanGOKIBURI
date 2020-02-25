@@ -380,7 +380,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15346
+  m_Name: pb_Mesh15356
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5963,7 +5963,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15362
+  m_Name: pb_Mesh15372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10222,6 +10222,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 120.01125
       objectReference: {fileID: 0}
+    - target: {fileID: -5716681864270162303, guid: 8856dbe0a9879694f8c375c54b52101d,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5716681864270162303, guid: 8856dbe0a9879694f8c375c54b52101d,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8856dbe0a9879694f8c375c54b52101d, type: 3}
 --- !u!43 &1131865669
@@ -10491,6 +10501,7 @@ GameObject:
   - component: {fileID: 1176531992}
   - component: {fileID: 1176531991}
   - component: {fileID: 1176531990}
+  - component: {fileID: 1176531994}
   m_Layer: 0
   m_Name: AccelPoint
   m_TagString: Untagged
@@ -10506,7 +10517,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176531989}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -10571,6 +10582,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1176531994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176531989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b0ef822add724ab9c9ba1ba1f9dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 0
+  speedZ: 0
+  minSpeed: 1
+  accel: 1
 --- !u!1 &1190178531
 GameObject:
   m_ObjectHideFlags: 0
@@ -13510,7 +13537,7 @@ PrefabInstance:
     - target: {fileID: 3702130600377092043, guid: ec40b66161fcdf5458ccee83032f58c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0482
+      value: 0.04128
       objectReference: {fileID: 0}
     - target: {fileID: 3702130600377092043, guid: ec40b66161fcdf5458ccee83032f58c3,
         type: 3}
@@ -13709,6 +13736,7 @@ GameObject:
   - component: {fileID: 1323545655}
   - component: {fileID: 1323545654}
   - component: {fileID: 1323545653}
+  - component: {fileID: 1323545659}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -13724,7 +13752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323545651}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.9922, y: 0.06999345, z: -1.219}
+  m_LocalPosition: {x: 0.655, y: 0.256, z: -0.19}
   m_LocalScale: {x: 0.024600692, y: 0.023722775, z: 0.010041058}
   m_Children: []
   m_Father: {fileID: 980336173}
@@ -14502,7 +14530,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -14518,6 +14546,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323545651}
   m_Mesh: {fileID: 92944499}
+--- !u!143 &1323545659
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323545651}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.40000048
+  m_Radius: 0.5000025
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.005
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1351810242
 GameObject:
   m_ObjectHideFlags: 0
@@ -16263,7 +16309,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15326
+  m_Name: pb_Mesh15336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
