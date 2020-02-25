@@ -10,18 +10,17 @@ public class Onion : MonoBehaviour
     void Start()
     {
 
-      //  void OnCollisionEnter(Collision collision) {
+        //  void OnCollisionEnter(Collision collision) {
 
         //    if (collision.gameObject.tag == "onion")
-            {
-
-            }
 
 
-             
+
     }
     // Update is called once per frame
     //void Update(
+
+}
    
         
 
